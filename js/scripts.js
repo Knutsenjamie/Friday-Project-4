@@ -24,14 +24,15 @@ function priceCalculator (){
 
 
 
-// //UI//
+//UI//
 
-// $(document).ready(function () {
-//   $("#formOne").submit(function (event) {
-//     event.preventDefault();
-//     const veggies = $("#veggies").val();
-//     const meat = $('#meat').val();
-//     const cheese = $('#cheese').val();
-//     const sauce = $('#sauce').val();
-//     const size = $('#size').val();
-//   })})
+$(document).ready(function () {
+  $("#formOne").submit(function (event) {
+    event.preventDefault();
+    const veggies = $("#veggies").val();
+    const meat = $('#meat').val();
+    const cheese = $('#cheese').val();
+    const sauce = $('#sauce').val();
+    const size = $('#size').val();
+    $("#result").append("Your total is $" + Pizza.priceCalculator());
+  })})

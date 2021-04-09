@@ -1,12 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.6.0.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Jamie's Pizza Parlor</title>
 </head>
 <body>
-  
+<div class="container">
+  <h1>Jamie's Pizza Parlor</h1>
+    <form id="formOne">
+      <label>Veggie Topping (Pick 1)</label>
+      <select id="veggies">
+        <option selected>Select</option>
+        <option>Artichokes</option>
+        <option>Olives</option>
+        <option>Spinach</option>
+        <option>Bell Peppers</option>
+      </select>
+      <br>
+      <label>Meat (Pick 1)</label>
+      <select id="meat">
+        <option selected>Select</option>
+        <option>Sausage</option>
+        <option>Pepperoni</option>
+        <option>Vegan Beyond Meat Sausage</option>
+        <option>Grilled Chicken</option>
+      </select>
+      <br>
+      <label>Cheese (Pick 1)</label>
+      <select id="cheese">
+        <option selected>Select</option>
+        <option>Mozzarella</option>
+        <option>Provolone</option>
+        <option>Provolone/Mozzarella Mix</option>
+        <option>Vegan Mozzarella Shreds</option>
+      </select>
+      <br>
+      <label>Sauce (Pick 1)</label>
+      <select id="sauce">
+        <option selected>Select</option>
+        <option>Marinara</option>
+        <option>Pesto</option>
+        <option>Alfredo</option>
+        <option>Vegan Pesto</option>
+      </select>
+      <br>
+      <label>Size</label>
+      <select id="size">
+        <option selected>Select</option>
+        <option>Small</option>
+        <option>Medium</option>
+        <option>Large</option>
+        <option>Mega</option>
+      </select>
+      <br>
+    </form>
+    <input type = "button" class= "btn btn-primary" value = "Submit">
+  </div>
 </body>
 </html>
