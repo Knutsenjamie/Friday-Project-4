@@ -4,13 +4,19 @@ function Pizza(veggie, meat, cheese, sauce, size) {
   this.cheese = cheese;
   this.sauce = sauce;
   this.size = size;
+  this.priceCalculator = priceCalculator;
 }
 
+let pizzaSelection = new Pizza (veggie.value, meat.value, cheese.value, sauce.value, size.value)
 
+// //UI//
 
-let veggieToppings = ("Artichokes", "Olives", "Spinach", "Bell Peppers");
-let meatToppings = ("Sausage", "Pepperoni", "Vegan Beyond Meat Sausage", "Chicken");
-let cheeseToppings = ("Mozzarella", "Parmesan", "Vegan Mozzarella", "Provolone");
-let sauceOptions = ("Marinara", "Pesto", "Vegan Alfredo", "Alfredo");
-let sizeoptions = ("Small", "Medium", "Large", "Mega");
-
+// $(document).ready(function () {
+//   $("#formOne").submit(function (event) {
+//     event.preventDefault();
+//     const veggies = $("#veggies").val();
+//     const meat = $('#meat').val();
+//     const cheese = $('#cheese').val();
+//     const sauce = $('#sauce').val();
+//     const size = $('#size').val();
+//   })})

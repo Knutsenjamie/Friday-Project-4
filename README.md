@@ -22,8 +22,13 @@
 
 ### Describe: Pizza();
 Test: "It should take the pizza toppings/sauce variables and pass them into the constructor" 
-Code: Pizza
+Code: 
 Expected Output: 
+
+### Describe priceCalculator();
+Test: "It should calculate the pizza's price based off of certain options the user celects"
+Code:
+Expected Output:
 
 ## Setup/Installation Requirements
 _You can view this webpage by checking out the url:_
