@@ -9,6 +9,21 @@ function Pizza(veggie, meat, cheese, sauce, size) {
 
 let pizzaSelection = new Pizza (veggie.value, meat.value, cheese.value, sauce.value, size.value)
 
+function priceCalculator (){
+  const basePrice = (11.00);
+  if (this.size == "Small") {
+    basePrice -= (2.00)
+  } else if (this.size == "Medium"){
+    basePrice == basePrice
+  } else if (this.size == "Large"){
+    basePrice += (2.00)
+  } else 
+    basePrice += (3.00)
+    return basePrice;
+}
+
+
+
 // //UI//
 
 // $(document).ready(function () {
