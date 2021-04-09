@@ -25,19 +25,19 @@ Test: "It should make a constructor for the pizza toppings/sauce selected drop-d
 Code: Pizza(veggie, meat, cheese, sauce, size);
 Expected Output: Pizza(artichokes, chicken, mozzarella, alfredo, mega);
 
-### Describe priceCalculator();
-Test: "It should calculate the pizza's price based off of certain options the user selects"
-Code: priceCalculator("Small");
-Expected Output: -= (2.00)
+### Describe Pizza.prototype.pizzaCost();
+Test: "It should calculate the pizza's price based off of the size option the user selects"
+Code: if (this.size === "small")
+Expected Output: this.pizzaPrice === 10.
 
 ## Setup/Installation Requirements
 _You can view this webpage by checking out the url:_
-https://github.com/Knutsenjamie/Friday-project-3.git
+https://github.com/Knutsenjamie/Friday-Project-4
 1. Open terminal
 2. Input these commands into terminal's command line:
 
 * cd desktop
-https://github.com/Knutsenjamie/Friday-project-3.git
+* clone https://github.com/Knutsenjamie/Friday-Project-4
 * code .
 
 ## Licensing
