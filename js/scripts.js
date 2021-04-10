@@ -17,7 +17,9 @@ Pizza.prototype.pizzaCost = function () {
     this.pizzaPrice === 13.00
   } else if (this.size === "Mega") {
     this.pizzaPrice === 14.50
+    return pizzaCost(); 
 }
+
 
 
 //UI//
@@ -30,7 +32,6 @@ $(document).ready(function () {
     const cheese = $("select#cheese").val();
     const sauce = $("select#sauce").val();
     const size = $("select#size").val();
-    let newPizza = new Pizza (veggie + meat + cheese + sauce + size);
-    newPizza.pizzaCost();
-    $("#result").append("<text>" + new Pizza.pizzaCost());
+    let newPizza = new Pizza (veggie + meat + cheese + sauce + size + pizzaCost())
+    $("#result").append("<text>" + "$" + newPizza + "</text>");
   })})}
