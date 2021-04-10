@@ -25,10 +25,12 @@ Pizza.prototype.pizzaCost = function () {
 $(document).ready(function () {
   $("#formOne").submit(function (event) {
     event.preventDefault();
-    const veggie = $("#veggies").val();
-    const meat = $('#meat').val();
-    const cheese = $('#cheese').val();
-    const sauce = $('#sauce').val();
-    const size = $('#size').val();
-    $("#result").append("Your total is $" + new Pizza.priceCalculator());
+    const veggie = $("select#veggies").val();
+    const meat = $("select#meat'").val();
+    const cheese = $("select#cheese").val();
+    const sauce = $("select#sauce").val();
+    const size = $("select#size").val();
+    let newPizza = new Pizza (veggie + meat + cheese + sauce + size);
+    newPizza.pizzaCost();
+    $("#result").append("<text>" + new Pizza.pizzaCost());
   })})}
