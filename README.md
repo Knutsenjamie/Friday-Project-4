@@ -28,7 +28,7 @@ Expected Output: Pizza(artichokes, chicken, mozzarella, alfredo, mega);
 ### Describe Pizza.prototype.pizzaCost();
 Test: "It should calculate the pizza's price based off of the size option the user selects"
 Code: if (this.size === "small")
-Expected Output: this.pizzaPrice === 10.
+Expected Output: this.pizzaPrice = "10.00"
 
 ## Setup/Installation Requirements
 _You can view this webpage by checking out the url:_
@@ -37,7 +37,7 @@ https://github.com/Knutsenjamie/Friday-Project-4
 2. Input these commands into terminal's command line:
 
 * cd desktop
-* clone https://github.com/Knutsenjamie/Friday-Project-4
+* Clone https://github.com/Knutsenjamie/Friday-Project-4
 * code .
 
 ## Licensing

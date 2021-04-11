@@ -1,0 +1,15 @@
+img {
+  height: 90%;
+  width: 60%;
+  border-style: solid; border-color: rgb(57, 170, 106);
+}
+
+.centered {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.jumbotron {
+  background-color: rgb(255, 78, 78);
+}
