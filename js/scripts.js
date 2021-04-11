@@ -5,33 +5,31 @@ function Pizza(veggie, meat, cheese, sauce, size) {
   this.sauce = sauce;
   this.size = size;
   this.pizzaPrice = 0;
-  this.amount = amount;
 }
 
-Pizza.prototype.pizzaCost = function () {
+Pizza.prototype.pizzaCost = function() {
   if (this.size === "small") {
-    this.pizzaPrice === 10.00
-  } else if (this.size == "Medium") {
-    this.pizzaPrice == 12.00
-  } else if (this.size == "Large") {
-    this.pizzaPrice === 13.00
+    this.pizzaPrice = "10.00"
+  } else if (this.size === "Medium") {
+    this.pizzaPrice = "12.00"
+  } else if (this.size === "Large") {
+    this.pizzaPrice = "13.00"
   } else if (this.size === "Mega") {
-    this.pizzaPrice === 14.50
-    return pizzaCost(); 
+    this.pizzaPrice = "14.50"
+  }
+  return this.pizzaPrice;
 }
 
-
-
-//UI//
-
-$(document).ready(function () {
-  $("#formOne").submit(function (event) {
-    event.preventDefault();
+jQuery($ => {
+  $("#formOne").on('submit', function(e) {
+    e.preventDefault();
     const veggie = $("select#veggies").val();
-    const meat = $("select#meat'").val();
+    const meat = $("select#meat").val();
     const cheese = $("select#cheese").val();
     const sauce = $("select#sauce").val();
     const size = $("select#size").val();
-    let newPizza = new Pizza (veggie + meat + cheese + sauce + size + pizzaCost())
-    $("#result").append("<text>" + "$" + newPizza + "</text>");
-  })})}
+
+    let newPizza = new Pizza(veggie, meat, cheese, sauce, size);
+    $("#result").text("$" + newPizza.pizzaCost());
+  })
+})
