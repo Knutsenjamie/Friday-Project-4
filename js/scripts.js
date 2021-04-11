@@ -21,8 +21,8 @@ Pizza.prototype.pizzaCost = function() {
 }
 
 jQuery($ => {
-  $("#formOne").on('submit', function(e) {
-    e.preventDefault();
+  $("#formOne").on('submit', function(x) {
+    x.preventDefault();
     const veggie = $("select#veggies").val();
     const meat = $("select#meat").val();
     const cheese = $("select#cheese").val();

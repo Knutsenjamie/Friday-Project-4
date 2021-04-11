@@ -16,7 +16,7 @@
 * _jQuery_
 
 ## Description: 
-
+This application was designed to showcase undertsanding of using javascript objects, prototypes, and constructors by making a website for ordering pizza. 
 
 ## Tests/Specs
 
