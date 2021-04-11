@@ -30,6 +30,6 @@ jQuery($ => {
     const size = $("select#size").val();
 
     let newPizza = new Pizza(veggie, meat, cheese, sauce, size);
-    $("#result").text("$" + newPizza.pizzaCost());
+    $("#result").text("Your Total Is: $" + newPizza.pizzaCost());
   })
 })
